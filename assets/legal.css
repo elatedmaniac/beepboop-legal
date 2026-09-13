@@ -1,0 +1,53 @@
+:root {
+  color-scheme: light;
+  --paper: #ffffff;
+  --ink: #151d19;
+  --green: #175c42;
+  --orange: #a44914;
+  --sand: #f4eddf;
+  --line: #cdd9d1;
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 18px;
+  line-height: 1.7;
+}
+* { box-sizing: border-box; }
+body { margin: 0; border-top: 5px solid var(--green); }
+a { color: var(--green); text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:hover { color: var(--orange); }
+a:focus-visible { outline: 3px solid var(--orange); outline-offset: 5px; }
+.site-header, main, footer { width: min(100% - 2.5rem, 48rem); margin-inline: auto; }
+.site-header { display: flex; gap: 1.5rem; align-items: center; justify-content: space-between; padding-block: 1.8rem; border-bottom: 1px solid var(--line); }
+.wordmark, nav, .draft, .effective, footer { font-family: "Trebuchet MS", "Segoe UI", sans-serif; }
+.wordmark { color: var(--ink); font-size: 1.6rem; font-weight: 700; text-decoration: none; line-height: 1.2; }
+.wordmark span { display: block; font-size: .76rem; font-weight: 400; margin-top: .35rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .9rem; }
+nav [aria-current="page"] { text-decoration-thickness: 3px; }
+main { padding-block: 2rem 4rem; }
+article { max-width: 70ch; }
+h1, h2 { line-height: 1.2; font-weight: 600; text-wrap: balance; }
+h1 { font-size: clamp(2rem, 5vw, 3.1rem); margin: .6rem 0 1.5rem; }
+h2 { font-size: 1.4rem; margin: 2.6rem 0 .8rem; }
+p, ul { margin-block: 0 1.15rem; }
+li { margin-bottom: .75rem; }
+ul { padding-left: 1.35rem; }
+strong { font-weight: 700; }
+code { font-size: .87em; overflow-wrap: anywhere; }
+.draft { background: var(--sand); border-left: 4px solid var(--orange); padding: 1rem 1.2rem; font-size: .88rem; margin-bottom: 2rem; }
+.effective { font-size: .85rem; color: #48594e; }
+footer { border-top: 1px solid var(--line); padding-block: 1.5rem 2.5rem; font-size: .8rem; }
+.skip { position: absolute; left: 1rem; top: -10rem; padding: .5rem 1rem; background: white; z-index: 1; }
+.skip:focus { top: 1rem; }
+@media (max-width: 520px) {
+  :root { font-size: 17px; }
+  .site-header { align-items: flex-start; flex-direction: column; gap: 1.2rem; }
+  main { padding-top: 1.4rem; }
+}
+@media print {
+  body { border: 0; }
+  .site-header, footer, .skip { display: none; }
+  main { width: auto; padding: 0; }
+  a { color: inherit; }
+  h2 { break-after: avoid; }
+}

@@ -1,0 +1,29 @@
+title: BeepBoop
+description: AI-assisted research and data analysis in Discord.
+url: "https://elatedmaniac.github.io"
+baseurl: "/beepboop-legal"
+# Complete these public details before changing draft to false.
+operator_name: "ElatedManiac"
+operator_location: "Washington, USA"
+contact_email: "privacy@elatedmaniac.io"
+effective_date: ""
+# Confirmed by the operator for this research beta.
+minimum_age: 18
+draft: true
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: null
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - _site-project
