@@ -199,8 +199,11 @@ Discord messages and other residual copies require separate review and evidence.
 Owner approval is an operational safeguard, not a waiver of deletion rights or
 a reason to delay handling beyond applicable requirements.
 
-`/unlink` disconnects the Discord/Google binding; it does **not** erase saved
-research, audit records or Discord messages. Removing a bot from a server,
+`/deauth` disconnects the Discord/Google binding, revokes previously issued
+BeepBoop identity tokens, cancels active bot work and requests termination of
+affected sandbox workers and Cloudflare Access sessions. Cloudflare logout
+failures are reported as pending and retried. Sign-out preserves your role and
+does **not** erase saved research, audit records or Discord messages. Removing a bot from a server,
 revoking Google access, stopping a Python worker or deleting a Discord message
 also does not automatically erase all service-held copies. Where available,
 `/data remove` withdraws one session asset; derived files and other records can

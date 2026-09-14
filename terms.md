@@ -141,9 +141,11 @@ requires it. You remain responsible for deciding how to use and verify results.
 
 ## Suspension, termination and changes
 
-You may stop using the Service at any time. `/unlink` disconnects your account
-binding; contact us for a broader deletion request. Removing the app or ending a
-session is not a complete data-deletion operation.
+You may stop using the Service at any time. `/deauth` disconnects your account
+binding and initiates credential and session revocation, including Cloudflare
+Access logout. A pending logout is not a completed sign-out. Your role and saved
+data remain; contact us for a broader deletion request. Removing the app or
+ending a session is not a complete data-deletion operation.
 
 We may restrict or suspend access to address misuse, security concerns, platform
 requirements, legal obligations or resource constraints. We may change or stop
