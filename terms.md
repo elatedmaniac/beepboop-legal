@@ -102,6 +102,21 @@ space you choose. It is not a license to sell your personal data or use it for
 unrelated model training. Necessary provider processing is described in the
 Privacy Policy.
 
+When you contribute material to a public/shared dataset, research collection,
+ticket or graph, your permission includes retaining and making that contribution
+available to authorized users for the documented research purpose after your
+account closes, to the extent permitted by its license, applicable law and
+platform requirements. The operator curates the general collection and handles
+requests for required removal or redaction. This does not waive privacy rights
+or permit retention of personal information or Discord API data that must be
+deleted. See the Privacy Policy for the request process.
+
+Creator-owned session files, notebooks and artifacts are treated separately:
+account deletion removes them even from shared research threads, without
+transferring ownership to the operator. Other participants should not rely on
+continued access to those files. Copies outside that session require separate
+review.
+
 You must have the rights and permissions needed for the content you submit and
 the actions you request. Other contributors and source providers retain their
 rights. We do not claim ownership of your inputs merely because you use the

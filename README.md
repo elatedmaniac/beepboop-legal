@@ -16,8 +16,12 @@ Markdown and Liquid automatically; do not add `.nojekyll`.
 - Privacy: https://elatedmaniac.github.io/beepboop-legal/privacy/
 - Terms: https://elatedmaniac.github.io/beepboop-legal/terms/
 
-The pages remain **drafts**, with no effective date. Encryption at rest and a
-complete data-deletion workflow are not implemented in the research service.
+The pages remain **drafts**, with no effective date. Encryption at rest and
+complete data-deletion validation remain unresolved. An owner-approved host
+workflow handles primary stores; residual copies still require manual review.
+Shared corpus contributions remain by default, while creator-owned session files
+are deleted even in shared threads. Required shared-content removals remain
+subject to owner review and applicable privacy/platform obligations.
 Publishing this site does not establish compliance or verify the Discord app.
 Keep `draft: true` until the stated commitments can be met and the policy review
 is complete. The draft banner and `noindex` hint do not make the site private.

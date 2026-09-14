@@ -12,9 +12,10 @@ and its related research services. The operator is based in
 
 {% if site.draft %}
 **Current implementation limits:** the operator has confirmed that service-held
-data is not encrypted at rest and a complete deletion workflow is not yet
-implemented. This draft is not evidence that those protections exist. These gaps
-must be addressed before this policy is made effective for the intended launch.
+data is not encrypted at rest. An owner-approved deletion workflow is being
+validated; automated cleanup does not cover every log, backup, export or
+third-party copy. A complete linked-account exercise remains outstanding. This
+draft is not evidence that those protections or full erasure have been verified.
 {% endif %}
 
 ## Information we process
@@ -145,6 +146,21 @@ Different records have different lifecycles:
   currently do not all have automatic age-based deletion. We retain information
   only while needed for the stated functions or legally required. Removal
   requests require manual review across the relevant stores.
+- Contributions to a public/shared dataset, research collection, ticket or
+  graph may remain available to authorized readers after the contributor
+  deletes their account, where continued retention is permitted for ongoing
+  research. Account deletion does not automatically withdraw those shared
+  contributions. The operator remains the curator of the general collection.
+  This does not override required deletion of personal information or Discord
+  API data: the owner reviews and removes or redacts such content as required.
+- Account deletion includes the creator's session files, notebooks and artifacts,
+  even when they belong to a shared Discord research thread. These files are
+  deleted, not transferred to the operator; other participants may lose access.
+  Copies in another person's session require separate review.
+- Minimal deletion-request evidence and hashed account suppression identifiers
+  may remain to document handling and prevent accidental re-admission or
+  restoration. These hashes are pseudonymous, not anonymous. Retention is
+  limited to those purposes and remains subject to applicable deletion duties.
 - Central operational logs are configured to expire after approximately
   30 days. Separate account/source audit records and backups have different
   lifecycles; the log setting is not a promise that every copy expires then.
@@ -172,6 +188,16 @@ We will verify the request using proportionate information, avoid disclosing
 another person's data, and respond without undue delay within any applicable
 legal deadline. Explain if you need to contact us after losing access to the
 bot; you do not need an active bot session to make a request.
+
+Where available, `/privacy request` records a deletion request. The operator
+reviews the scope and approves a maintenance plan; deletion begins only when an
+authorized administrator runs it on the lab host. The request itself does not
+delete data. The workflow removes account access, the private research workspace
+and creator-owned session files. Shared corpus contributions remain by default;
+required shared-content removals are handled by the owner. Logs, backups, exports,
+Discord messages and other residual copies require separate review and evidence.
+Owner approval is an operational safeguard, not a waiver of deletion rights or
+a reason to delay handling beyond applicable requirements.
 
 `/unlink` disconnects the Discord/Google binding; it does **not** erase saved
 research, audit records or Discord messages. Removing a bot from a server,
